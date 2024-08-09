@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note App</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <note-header></note-header>
+    <main>
+      <note-input></note-input>
+      <div id="notesContainer"></div>
+    </main>
+
+    <!-- Edit Note Popup -->
+    <div id="edit-popup" class="popup-overlay">
+      <div class="popup-content">
+        <span id="close-edit-popup" class="close-icon">&times;</span>
+        <!-- Popup content will be added dynamically -->
+      </div>
+    </div>
+
+    <!-- Confirm Delete Popup -->
+    <div id="confirm-delete-popup" class="popup-overlay">
+      <div class="confirm-delete-content">
+        <p id="delete-confirm-message"></p>
+        <button id="confirm-delete">Delete</button>
+        <button id="cancel-delete">Cancel</button>
+      </div>
+    </div>
+
+    <script src="/js/note-item.js"></script>
+    <script src="/js/note-input.js"></script>
+    <script src="/js/note-header.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
